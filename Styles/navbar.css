@@ -71,6 +71,29 @@
 }
 
 
+/* newquicklink */
+
+#newquicklink{
+    display:flex;
+    gap:40px;
+    padding-left:450px;
+    background-color:#eef4ff;
+    color:white;
+    margin-bottom: 35px;
+    
+}
+#newquicklink>p>a{
+    cursor:pointer;
+    text-decoration: none;
+    color:black;
+    
+
+}
+#newquicklink>p>a:hover{
+    border-bottom: dashed;
+}
+
+
 /* footer */
 
 #footer{

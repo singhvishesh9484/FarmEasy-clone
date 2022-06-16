@@ -96,6 +96,9 @@ if(searchData=="healthcare"){
 if(searchData=="medicine"){
     window.location.href = "search.html"
 }
+else{
+    window.location.href = "search.html"
+}
 
 })
 

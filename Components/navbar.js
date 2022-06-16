@@ -31,6 +31,72 @@ let navbar=()=>{
     }
 
 
+    let newquicklink=()=>{
+        return `
+        <p><a href="medicine.html">Medicine</a></p>
+        <p><a href="healthcare.html">Healthcare</a></p>
+        <p><a href="#">Lab Tests</a></p>
+        <p><a href="#">Offers</a></p>
+        <p><a href="#">Plus</a></p>
+        <p><a href="#">Health Blogs</a></p>  
+        `
+    }
+
+
+    
+let cartbar=()=>{
+    return `
+    <header>
+        <div id="header1">
+          <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="logo"
+               onclick="(location.href ='index.html')"/>
+  
+          <div class="select">
+            <p id="pinhere">Select Pincode  <i class="fa-solid fa-sort-down"></i></p>
+            
+            <div>
+              <input type="text" placeholder="Search for Medicines / Healthcare Products" class="Search" id="search1234"/>
+            </div>
+
+            <a class="search" >
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_5qVsxmva7374MtPACAplyCeH8W7oK2J1_A&usqp=CAU"alt="a" id="searchbtn"></a>
+          </div>
+        </div>
+        <div id="header2">
+          <div class="downhead">
+            <a href="medicine.html">Order Medicines</a>
+
+            <a href="healthcare.html">Healthcare Products</a>
+
+            <a href="#">Diagnostic Tests</a>
+
+            <a href="#">RTPCR</a>
+
+          </div>
+
+          <div class="righthead" id="rit">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg" alt=""
+              onclick="(location.href ='offer.html')"/>
+            <p><a href="offer.html">Offers</a></p>
+  
+            <img src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg" />
+            <p id="makemeuser"><a href="login.html" id="useme">Login/Signup</a></p>
+            
+            <img src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg" alt=""
+              onclick="(location.href='cart.html')"/>
+
+            <p><a href="cart.html" >Cart</a></p>
+
+          </div>
+          
+        </div>
+
+      </header>
+
+    `
+}
+
+
     let footer=()=>{
         return `
     
@@ -109,6 +175,68 @@ let navbar=()=>{
                 </div>
             </div>
         `
+
     }
 
-    export {navbar,quicklink,footer}
+        let lakhplusnavbar=()=>{
+            return `
+            <div id="bot1">
+              <div>
+                <img
+                  src="https://assets.pharmeasy.in/web-assets/dist/9ac2da37.svg?dim=0x72&dpr=1.25&q=100"
+                />
+                <h4>1 Lakh+ Products</h4>
+                <p>
+                  We maintain strict quality controls on all our partner retailers, so
+                  that you always get standard quality products.
+                </p>
+              </div>
+              <div>
+                <img
+                  src="https://assets.pharmeasy.in/web-assets/dist/2f258fe0.svg?dim=0x72&dpr=1.25&q=100"
+                />
+                <h4>Secure Payment</h4>
+                <p>100% secure and trusted payment protection</p>
+              </div>
+              <div>
+                <img
+                  src="https://assets.pharmeasy.in/web-assets/dist/256fe591.svg?dim=0x72&dpr=1.25&q=100"
+                />
+                <h4>Easy Return</h4>
+                <p>
+                  We have a new and dynamic return window policy for medicines and
+                  healthcare items. Refer FAQs section for more details.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div id="mob">
+              <div class="mobimg">
+                <img
+                  src="https://assets.pharmeasy.in/web-assets/dist/34a16ae8.jpg"
+                  alt="mobile App"
+                />
+              </div>
+              <div class="app">
+                <div id="txt">Download the App for Free</div>
+                <div class="logflx">
+                  <div class="log">
+                    <img
+                      src="https://assets.pharmeasy.in/web-assets/dist/3380aedc.png"
+                      alt="Google Play"
+                    />
+                    <p>Google Play</p>
+                  </div>
+                  <div class="log">
+                    <img
+                      src="https://assets.pharmeasy.in/web-assets/dist/9bf5c576.png"
+                      alt="Apple Store"
+                    />
+                    <p>Apple Store</p>
+                  </div>
+                </div>
+              </div>
+            `
+    }
+
+    export {navbar,quicklink,newquicklink,cartbar,lakhplusnavbar,footer}
